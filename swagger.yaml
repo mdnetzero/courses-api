@@ -10,10 +10,43 @@ schemes:
 paths:
   /:
     get:
-      summary: Returns a list of upcoming courses.
-      description: Liste mit Daten von zukünftigen Kursen für Energieberater.
+      summary: Retrieve list of courses
+      description: Retrieve a list of available courses with details.
+      operationId: getCourses
       produces:
         - application/json
       responses:
         200:
-          description: OK
+          description: A list of courses
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                id:
+                  type: string
+                  example: recrwBGwgEMMwjXHa
+                End:
+                  type: string
+                  format: date
+                  example: 2024-08-09
+                Start:
+                  type: string
+                  format: date
+                  example: 2024-08-05
+                Title:
+                  type: string
+                  example: "Energieberatung Vertiefungskurs WG 05.08. - 09.08.2024"
+                Page URL:
+                  type: string
+                  format: uri
+                  example: "https://www.netzeroacademy.de/energieberater-wohngebauede"
+                Description:
+                  type: string
+                  example: "Im Kurs Energieberater Wohngebäude eignest Du Dir umfassende Kenntnisse in allen Aspekten energetischer Sanierungen für Planung, Ausführung und Kontrolle an. Du erhältst Einblicke in Baubetreuung, Bauüberwachung und Qualitätssicherung.\n\nNach dem Kurs bist Du Energieberater:in für Wohngebäude\n"
+                createdTime:
+                  type: string
+                  format: date-time
+                  example: null
+      tags:
+        - Courses
