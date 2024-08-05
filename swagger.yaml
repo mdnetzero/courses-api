@@ -13,7 +13,7 @@ paths:
       summary: Returns a list of upcoming courses.
       description: Liste mit Daten von zukünftigen Kursen für Energieberater.
       produces:
-        - */*
+        - application/json
       responses:
         200:
           description: OK
