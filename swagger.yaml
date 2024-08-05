@@ -3,7 +3,7 @@ info:
   title: NetZero Academy Courses
   description: Lists upcoming courses for energy consultants. Kurse für Energieberater.
   version: 1.0.0
-host: https://hook.eu1.make.com/xztbbwwtmuvy0kppfryfd0rwrkfh6sc6
+host: hook.eu1.make.com/xztbbwwtmuvy0kppfryfd0rwrkfh6sc6
 basePath: /
 schemes:
   - https
