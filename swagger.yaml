@@ -11,7 +11,7 @@ securityDefinitions:
   ApiKeyAuth:
     type: apiKey
     in: header
-    name: authorization  
+    name: X-API-Key
 paths:
   /xztbbwwtmuvy0kppfryfd0rwrkfh6sc6:
     get:
