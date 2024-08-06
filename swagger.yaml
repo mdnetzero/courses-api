@@ -7,6 +7,11 @@ host: hook.eu1.make.com
 basePath: /
 schemes:
   - https
+securityDefinitions:
+  ApiKeyAuth:
+    type: apiKey
+    in: header
+    name: authorization  
 paths:
   /xztbbwwtmuvy0kppfryfd0rwrkfh6sc6:
     get:
