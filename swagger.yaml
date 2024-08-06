@@ -13,7 +13,7 @@ securityDefinitions:
     in: header
     name: X-API-Key
 security:
-  - APIKeyAuth: []
+  - ApiKeyAuth: []
 paths:
   /xztbbwwtmuvy0kppfryfd0rwrkfh6sc6:
     get:
