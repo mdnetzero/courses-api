@@ -30,9 +30,6 @@ paths:
             items:
               type: object
               properties:
-                id:
-                  type: string
-                  example: recrwBGwgEMMwjXHa
                 End:
                   type: string
                   format: date
@@ -51,9 +48,5 @@ paths:
                 Description:
                   type: string
                   example: "Im Kurs Energieberater Wohngebäude eignest Du Dir umfassende Kenntnisse in allen Aspekten energetischer Sanierungen für Planung, Ausführung und Kontrolle an. Du erhältst Einblicke in Baubetreuung, Bauüberwachung und Qualitätssicherung.\n\nNach dem Kurs bist Du Energieberater:in für Wohngebäude\n"
-                createdTime:
-                  type: string
-                  format: date-time
-                  example: null
       tags:
         - Courses
