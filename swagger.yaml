@@ -41,12 +41,12 @@ paths:
                 Title:
                   type: string
                   example: "Energieberatung Vertiefungskurs WG 05.08. - 09.08.2024"
-                Page URL:
+                URL:
                   type: string
                   format: uri
                   example: "https://www.netzeroacademy.de/energieberater-wohngebauede"
                 Description:
                   type: string
-                  example: "Im Kurs Energieberater Wohngebäude eignest Du Dir umfassende Kenntnisse in allen Aspekten energetischer Sanierungen an.\n"
+                  example: "Im Kurs Energieberater Wohngebaeude eignest Du Dir umfassende Kenntnisse in allen Aspekten energetischer Sanierungen an.\n"
       tags:
         - Courses
