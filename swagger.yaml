@@ -18,7 +18,7 @@ paths:
   /xztbbwwtmuvy0kppfryfd0rwrkfh6sc6:
     get:
       summary: Retrieve list of upcoming courses
-      description: Retrieve a list of upcoming courses with details.
+      description: Retrieve a list of upcoming courses with start and end date details and a link to the course description in the web page.
       operationId: getUpcomingCourses
       produces:
         - application/json
