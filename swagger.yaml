@@ -35,7 +35,7 @@ paths:
                   example: "Energieberatung Vertiefungskurs WG 05.08. - 09.08.2024"
                 Description:
                   type: string
-                  example: "Im Kurs Energieberater Wohngebaeude eignest Du Dir umfassende Kenntnisse in allen Aspekten energetischer Sanierungen für Planung, Ausfuehrung und Kontrolle an. Du erhaetst Einblicke in Baubetreuung, Bauueberwachung und Qualitaetssicherung.\n\nNach dem Kurs bist Du Energieberater:in fuer Wohngebaeude\n"
+                  example: "Im Kurs Energieberater Wohngebaeude eignest Du Dir umfassende Kenntnisse in allen Aspekten energetischer Sanierungen fuer Planung, Ausfuehrung und Kontrolle an. Du erhaeltst Einblicke in Baubetreuung, Bauueberwachung und Qualitaetssicherung.\n\nNach dem Kurs bist Du Energieberater:in fuer Wohngebaeude\n"
                 Start:
                   type: string
                   format: date
