@@ -2,7 +2,7 @@ swagger: "2.0"
 info:
   title: NetZero Academy Courses
   description: Lists upcoming courses for energy consultants. Kurse fuer Energieberater.
-  version: 1.0.1
+  version: 1.0.2
 host: hook.eu1.make.com
 basePath: /
 schemes:
@@ -34,25 +34,27 @@ paths:
           schema:
             type: array
             items:
-              type: object
-              properties:
-                End:
-                  type: string
-                  format: date
-                  example: 2024-08-09
-                Start:
-                  type: string
-                  format: date
-                  example: 2024-08-05
-                Title:
-                  type: string
-                  example: "Energieberatung Vertiefungskurs WG 05.08. - 09.08.2024"
-                URL:
-                  type: string
-                  format: uri
-                  example: "https://www.netzeroacademy.de/energieberater-wohngebauede"
-                Description:
-                  type: string
-                  example: "Im Kurs Energieberater Wohngebaeude eignest Du Dir umfassende Kenntnisse in allen Aspekten energetischer Sanierungen an.\n"
-      tags:
-        - Courses
+              $ref: '#/definitions/Course'
+
+definitions:
+  Course:
+    type: object
+    properties:
+      Title:
+        type: string
+        example: "Energieberatung Vertiefungskurs WG 05.08. - 09.08.2024"
+      Description:
+        type: string
+        example: "Im Kurs Energieberater Wohngebaeude eignest Du Dir umfassende Kenntnisse in allen Aspekten energetischer Sanierungen an.\n"
+      Start:
+        type: string
+        format: date
+        example: 2024-08-05
+      End:
+        type: string
+        format: date
+        example: 2024-08-09
+      URL:
+        type: string
+        format: uri
+        example: "https://www.netzeroacademy.de/energieberater-wohngebauede"
