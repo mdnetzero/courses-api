@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
   title: NetZero Academy Courses
-  description: Lists upcoming courses for energy consultants. 
+  description: Lists upcoming courses for energy consultants. Kurse für Energieberater.
   version: 1.0.0
 host: hook.eu1.make.com
 basePath: /
@@ -17,9 +17,9 @@ security:
 paths:
   /xztbbwwtmuvy0kppfryfd0rwrkfh6sc6:
     get:
-      summary: Retrieve list of upcoming courses
-      description: Retrieve a list of upcoming courses with start and end date details and a link to the course description in the web page.
-      operationId: getUpcomingCourses
+      summary: Retrieve list of courses
+      description: Retrieve a list of available courses with details.
+      operationId: getCourses
       produces:
         - application/json
       responses:
@@ -30,24 +30,23 @@ paths:
             items:
               type: object
               properties:
-                Title:
-                  type: string
-                  example: "Energieberatung Vertiefungskurs WG 05.08. - 09.08.2024"
-                Description:
-                  type: string
-                  example: "Im Kurs Energieberater Wohngebaeude eignest Du Dir umfassende Kenntnisse in allen Aspekten energetischer Sanierungen fuer Planung, Ausfuehrung und Kontrolle an. Du erhaeltst Einblicke in Baubetreuung, Bauueberwachung und Qualitaetssicherung.\n\nNach dem Kurs bist Du Energieberater:in fuer Wohngebaeude\n"
-                Start:
-                  type: string
-                  format: date
-                  example: 2024-08-05
                 End:
                   type: string
                   format: date
                   example: 2024-08-09
-                URL:
+                Start:
+                  type: string
+                  format: date
+                  example: 2024-08-05
+                Title:
+                  type: string
+                  example: "Energieberatung Vertiefungskurs WG 05.08. - 09.08.2024"
+                Page URL:
                   type: string
                   format: uri
                   example: "https://www.netzeroacademy.de/energieberater-wohngebauede"
+                Description:
+                  type: string
+                  example: "Im Kurs Energieberater Wohngebäude eignest Du Dir umfassende Kenntnisse in allen Aspekten energetischer Sanierungen für Planung, Ausführung und Kontrolle an. Du erhältst Einblicke in Baubetreuung, Bauüberwachung und Qualitätssicherung.\n\nNach dem Kurs bist Du Energieberater:in für Wohngebäude\n"
       tags:
-        - name: Courses
-          description: Lists upcoming courses 
+        - Courses
