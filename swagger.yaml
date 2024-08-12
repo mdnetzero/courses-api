@@ -17,9 +17,9 @@ security:
 paths:
   /xztbbwwtmuvy0kppfryfd0rwrkfh6sc6:
     get:
-      summary: Retrieve list of courses
-      description: Retrieve a list of available courses with details.
-      operationId: getCourses
+      summary: Retrieve list of upcoming courses
+      description: Retrieve a list of upcoming courses with details.
+      operationId: getUpcomingCourses
       produces:
         - application/json
       responses:
