@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
   title: NetZero Academy Courses
-  description: Lists upcoming courses for energy consultants. Kurse für Energieberater. Diese Liste enthält alle Kurse die in der Zukunft stattfinden. Die Kurse sind Basiskurse und Vertiefungskurse für Wohngebäude (WG) und Nichtwohngebäude (NWG).
+  description: Lists upcoming courses for energy consultants. Kurse für Energieberater. In dieser Liste sind alle Kurse die in der Zukunft stattfinden. Die Kurse sind Basiskurse und Vertiefungskurse Wohngebäude (WG) und Nichtwohngebäude (NWG).
   version: 1.0.0
 host: hook.eu1.make.com
 basePath: /
