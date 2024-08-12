@@ -47,6 +47,6 @@ paths:
                   example: "https://www.netzeroacademy.de/energieberater-wohngebauede"
                 Description:
                   type: string
-                  example: "Im Kurs Energieberater Wohngebäude eignest Du Dir umfassende Kenntnisse in allen Aspekten energetischer Sanierungen für Planung, Ausführung und Kontrolle an. Du erhältst Einblicke in Baubetreuung, Bauüberwachung und Qualitätssicherung.\n\nNach dem Kurs bist Du Energieberater:in für Wohngebäude\n"
+                  example: "Im Kurs Energieberater Wohngebäude eignest Du Dir umfassende Kenntnisse in allen Aspekten energetischer Sanierungen an.\n"
       tags:
         - Courses
