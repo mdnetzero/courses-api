@@ -23,8 +23,7 @@ paths:
     get:
       summary: Retrieve list of courses
       description: 
-        Retrieve a list of available courses with details such as title, start and end dates, and a link to the course page.
-        This endpoint can be used to get an overview of upcoming courses.
+        Retrieve a list of available courses with details such as title, start and end dates, and a link to the course page. This endpoint can be used to get an overview of upcoming courses.
       operationId: getCourses
       produces:
         - application/json
