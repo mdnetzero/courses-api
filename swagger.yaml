@@ -2,7 +2,7 @@ swagger: "2.0"
 info:
   title: NetZero Academy Courses
   description: Lists upcoming courses for energy consultants. Kurse fuer Energieberater.
-  version: 1.0.2
+  version: 1.0.3
 host: hook.eu1.make.com
 basePath: /
 schemes:
@@ -27,6 +27,19 @@ paths:
       operationId: getCourses
       produces:
         - application/json
+      parameters:
+        - name: startDate
+          in: query
+          description: Filter courses starting from this date
+          required: false
+          type: string
+          format: date
+        - name: endDate
+          in: query
+          description: Filter courses ending by this date
+          required: false
+          type: string
+          format: date  
       responses:
         200:
           description: A list of courses
