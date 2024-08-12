@@ -42,7 +42,7 @@ paths:
           format: date
         - name: limit
           in: query
-          description: Specify the maximum number of items to return (maximum: 10)
+          description: Specify the maximum number of items to return (maximum 10)
           required: false
           type: integer
           format: int32
