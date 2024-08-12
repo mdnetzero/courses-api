@@ -41,7 +41,7 @@ paths:
                 Title:
                   type: string
                   example: "Energieberatung Vertiefungskurs WG 05.08. - 09.08.2024"
-                Page URL:
+                URL:
                   type: string
                   format: uri
                   example: "https://www.netzeroacademy.de/energieberater-wohngebauede"
