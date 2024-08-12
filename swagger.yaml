@@ -1,4 +1,4 @@
-: swagger: "2.0"
+swagger: "2.0"
 info:
   title: NetZero Academy Courses
   description: Lists upcoming courses for energy consultants. 
