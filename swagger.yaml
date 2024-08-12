@@ -1,4 +1,4 @@
-swagger: "2.0"
+: swagger: "2.0"
 info:
   title: NetZero Academy Courses
   description: Lists upcoming courses for energy consultants. 
@@ -49,4 +49,5 @@ paths:
                   format: uri
                   example: "https://www.netzeroacademy.de/energieberater-wohngebauede"
       tags:
-        - Courses
+        - name: Courses
+          description: Lists upcoming courses 
