@@ -59,7 +59,6 @@ paths:
             - vertiefungskurs_wohngebäude
             - vertiefungskurs_nichtwohngebäude
             - fernstudium
-          example: basiskurs
       responses:
         200:
           description: A list of courses
