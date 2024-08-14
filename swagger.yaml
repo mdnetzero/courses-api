@@ -49,7 +49,17 @@ paths:
           default: 10
           minimum: 1
           maximum: 10
-   
+        - name: type
+          in: query
+          description: Filter courses by their type
+          required: false
+          type: string
+          enum:
+            - basiskurs
+            - vertiefungskurs_wohngebäude
+            - vertiefungskurs_nichtwohngebäude
+            - fernstudium
+          example: basiskurs
       responses:
         200:
           description: A list of courses
