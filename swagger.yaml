@@ -51,7 +51,13 @@ paths:
           maximum: 10
         - name: type
           in: query
-          description: Filter courses by their type
+          description: >
+            Filtert Kurse nach Typ. Mögliche Werte sind:
+            - 'basiskurs': Energieberatung Basiskurs.
+            - 'vertiefungskurs_wohngebäude': Vertiefungskurs für den Bereich Wohngebäude
+            - 'vertiefungskurs_nichtwohngebäude': Vertiefungskurs für den Bereich Nichtwohngebäude
+            - 'fernstudium': Berufsbegleitende Kurse
+
           required: false
           type: string
           enum:
