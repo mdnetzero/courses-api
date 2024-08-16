@@ -73,6 +73,7 @@ paths:
             items:
               $ref: '#/definitions/Course'
   /ab708o5kgbdn9hti4c75u92c7s36rsio:
+    get:
       summary: Retrieve list of webinars
       description:
         Retrieve a list of available webinars with details such as title, start and end dates, and a link to the webinar page. This endpoint can be used to get an overview of upcoming webinars.
@@ -110,6 +111,7 @@ paths:
               $ref: '#/definitions/Course'
               
   /m98i8x79a260zva3r6shi0gcjid8hhjg:
+    get:
       summary: Retrieve list of seminars
       description:
         Retrieve a list of available seminars with details such as title, start and end dates, and a link to the seminar page. This endpoint can be used to get an overview of upcoming seminars.
