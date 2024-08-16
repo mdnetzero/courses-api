@@ -108,6 +108,7 @@ paths:
             type: array
             items:
               $ref: '#/definitions/Course'
+              
   /m98i8x79a260zva3r6shi0gcjid8hhjg:
       summary: Retrieve list of seminars
       description:
