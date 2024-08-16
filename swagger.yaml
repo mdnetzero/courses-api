@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
-  title: NetZero Academy Courses
-  description: Lists dates and topics of upcoming courses for energy consultants. Kurse fuer Energieberater.
+  title: NetZero Academy Courses, Webinars and Seminars
+  description: Lists dates and topics of upcoming courses, webinars and seminars for energy consultants. Kurse fuer Energieberater.
   version: 1.0.5
 host: hook.eu1.make.com
 basePath: /
@@ -68,6 +68,80 @@ paths:
       responses:
         200:
           description: A list of courses
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Course'
+paths:
+  /ab708o5kgbdn9hti4c75u92c7s36rsio:
+      summary: Retrieve list of webinars
+      description:
+        Retrieve a list of available webinars with details such as title, start and end dates, and a link to the webinar page. This endpoint can be used to get an overview of upcoming webinars.
+      operationId: getWebinars
+      produces:
+        - application/json
+      parameters:
+        - name: startDate
+          in: query
+          description: Filter webinars starting from this date
+          required: false
+          type: string
+          format: date
+        - name: endDate
+          in: query
+          description: Filter webinars ending by this date
+          required: false
+          type: string
+          format: date
+        - name: limit
+          in: query
+          description: Specify the maximum number of items to return (maximum 10)
+          required: false
+          type: integer
+          format: int32
+          default: 10
+          minimum: 1
+          maximum: 10
+      responses:
+        200:
+          description: A list of webinars
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Course'
+paths:
+  /m98i8x79a260zva3r6shi0gcjid8hhjg:
+      summary: Retrieve list of seminars
+      description:
+        Retrieve a list of available seminars with details such as title, start and end dates, and a link to the seminar page. This endpoint can be used to get an overview of upcoming seminars.
+      operationId: getSeminars
+      produces:
+        - application/json
+      parameters:
+        - name: startDate
+          in: query
+          description: Filter seminars starting from this date
+          required: false
+          type: string
+          format: date
+        - name: endDate
+          in: query
+          description: Filter seminars ending by this date
+          required: false
+          type: string
+          format: date
+        - name: limit
+          in: query
+          description: Specify the maximum number of items to return (maximum 10)
+          required: false
+          type: integer
+          format: int32
+          default: 10
+          minimum: 1
+          maximum: 10
+      responses:
+        200:
+          description: A list of seminars
           schema:
             type: array
             items:
