@@ -72,7 +72,6 @@ paths:
             type: array
             items:
               $ref: '#/definitions/Course'
-paths:
   /ab708o5kgbdn9hti4c75u92c7s36rsio:
       summary: Retrieve list of webinars
       description:
@@ -109,7 +108,6 @@ paths:
             type: array
             items:
               $ref: '#/definitions/Course'
-paths:
   /m98i8x79a260zva3r6shi0gcjid8hhjg:
       summary: Retrieve list of seminars
       description:
