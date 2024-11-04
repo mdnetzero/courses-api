@@ -30,13 +30,13 @@ paths:
       parameters:
         - name: startDate
           in: query
-          description: Filter courses starting from this date
+          description: Filter for courses starting from this date
           required: false
           type: string
           format: date
         - name: endDate
           in: query
-          description: Filter courses ending by this date
+          description: Filter for courses ending by this date
           required: false
           type: string
           format: date
